@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+body { width: 318px; margin: 0; padding: 20px; color: #263238; font: 13px Inter, Segoe UI, Arial, sans-serif; background: linear-gradient(145deg, #fff 0%, #f4f8fb 100%); }
+.brand { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+.brand-mark { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 12px; color: #fff; font-size: 21px; background: linear-gradient(135deg, #e3262e, #a90e18); box-shadow: 0 5px 12px #c51b2638; }
+h1 { margin: 0; font-size: 19px; letter-spacing: -.3px; }
+.brand div span { color: #78909c; font-size: 11px; }
+.hint { margin: 0 0 16px; color: #607d8b; line-height: 1.45; }
+.settings { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; color: #546e7a; font-size: 12px; }
+.delay-input { display: flex; align-items: center; gap: 5px; color: #90a4ae; }
+input { width: 72px; padding: 7px 8px; border: 1px solid #d5e0e5; border-radius: 7px; outline: 0; color: #263238; background: #fff; text-align: right; }
+input:focus { border-color: #d32f2f; box-shadow: 0 0 0 3px #d32f2f18; }
+.actions { display: flex; gap: 9px; }
+button { border: 0; border-radius: 8px; padding: 10px; color: white; font-weight: 600; cursor: pointer; transition: transform .15s, opacity .15s; }
+button:hover:not(:disabled) { transform: translateY(-1px); }
+.actions button { flex: 1; }
+.primary { background: linear-gradient(135deg, #d92832, #b3131d); box-shadow: 0 4px 10px #c51b2630; }
+.danger { background: #455a64; }
+button:disabled { opacity: .45; cursor: default; transform: none; }
+.status-card { display: flex; align-items: flex-start; gap: 8px; min-height: 46px; margin-top: 16px; padding: 11px; border: 1px solid #e2eaee; border-radius: 9px; color: #455a64; background: #fff; line-height: 1.35; }
+.status-dot { flex: 0 0 auto; width: 8px; height: 8px; margin-top: 4px; border-radius: 50%; background: #90a4ae; }
+.status-dot.running { background: #2e7d32; box-shadow: 0 0 0 4px #2e7d3220; }
+.status-dot.done { background: #d32f2f; }
+.stats { display: flex; gap: 9px; margin-top: 10px; }
+.stats div { flex: 1; padding: 10px; border-radius: 9px; background: #edf3f6; }
+.stats strong, .stats span { display: block; }
+.stats strong { font-size: 18px; color: #263238; }
+.stats span { margin-top: 2px; color: #78909c; font-size: 11px; }
+.reset { width: 100%; margin-top: 12px; color: #546e7a; background: transparent; border: 1px solid #d5e0e5; }
+.reset:hover:not(:disabled) { background: #fff; }
+.note { margin: 14px 0 0; color: #90a4ae; font-size: 10px; line-height: 1.4; text-align: center; }

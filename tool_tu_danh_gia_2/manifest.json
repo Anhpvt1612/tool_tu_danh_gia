@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Viettel Post - Tự đánh giá đơn hàng",
+  "version": "1.0.0",
+  "description": "Hỗ trợ đánh giá 5 sao các đơn hàng Viettel Post đang hiển thị.",
+  "action": {
+    "default_title": "Tự đánh giá Viettel Post",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage", "tabs"],
+  "host_permissions": [
+    "https://viettelpost.vn/*",
+    "https://viettelpost.com.vn/*",
+    "http://viettelpost.vn/*",
+    "http://viettelpost.com.vn/*",
+    "https://*.viettelpost.vn/*",
+    "https://*.viettelpost.com.vn/*",
+    "http://*.viettelpost.vn/*",
+    "http://*.viettelpost.com.vn/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://viettelpost.vn/*",
+        "https://viettelpost.com.vn/*",
+        "http://viettelpost.vn/*",
+        "http://viettelpost.com.vn/*",
+        "https://*.viettelpost.vn/*",
+        "https://*.viettelpost.com.vn/*",
+        "http://*.viettelpost.vn/*",
+        "http://*.viettelpost.com.vn/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

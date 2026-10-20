@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <title>Tự đánh giá Viettel Post</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="brand"><span class="brand-mark">★</span><div><h1>Auto Rate</h1><span>Viettel Post</span></div></div>
+    <p class="hint">Mở trang <strong>Đơn hàng gửi</strong> trước khi bắt đầu.</p>
+    <div class="settings"><label for="delay">Thời gian chờ</label><div class="delay-input"><input id="delay" type="number" min="500" step="100" value="1200"><span>ms</span></div></div>
+    <div class="actions"><button id="start" class="primary"><span>▶</span> Bắt đầu</button><button id="stop" class="danger"><span>■</span> Dừng</button></div>
+    <div class="status-card"><span class="status-dot"></span><div id="status">Đang kiểm tra trang...</div></div>
+    <div class="stats"><div><strong id="processed">0</strong><span>Đã xử lý</span></div><div><strong id="skipped">0</strong><span>Bỏ qua</span></div></div>
+    <button id="reset" class="reset">↻ &nbsp; Xóa lịch sử để chạy lại</button>
+    <p class="note">Chỉ thao tác trên các đơn đang hiển thị trong tài khoản của bạn.</p>
+    <script src="popup.js"></script>
+  </body>
+</html>
